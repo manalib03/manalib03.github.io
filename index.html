@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolioStyle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<header>
+     <nav>
+        <ul class="topnav" id="dropDownClick">
+        <div data-initials="MB"></div>
+        <li><a href="#Introduction">Home</a></li>
+        <li><a href="#Languages">Languages</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Experiences">Experience</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li class="dropdownIcon"><a href="javascript:void(0);" onClick="dropMenu();">&#9776</a></li>
+    </ul>
+    </nav>
+  
+  
+</header>
+    <body>
+        <section id="Introduction">
+                <!-- ********************  INTRODUCTION  ********************* -->
+                <div class="top-section">
+                    <h1>Hello!</h1>
+                    <p>Welcome! I am a second year computer science at York University with a huge interest in IT and web development. </p>
+                </div>
+                </div>
+
+            </section>
+        <section id="Languages">
+                <!-- ********************  LANGUAGES  ********************* -->
+                <div class="top-section">
+                    <h1>FRONT-END LANGUAGES</h1>
+                </div>      
+                <div class="languages">
+                    <div class="each-column">
+                        <img src="images/bootstrap.png">
+                        <div class="each-column-text">
+                        <p>Bootstrap</p>
+                    </div>
+                    </div>
+                   <div class="each-column">
+                    <img src="images/html.png">
+                    <div class="each-column-text">
+                    <p>HTML</p>
+                    </div>
+                   </div>
+                   <div class="each-column">
+                    <img src="images/css.png">
+                    <div class="each-column-text">
+                    <p>CSS</p>
+                </div>
+                </div>
+                <div class="each-column">
+                    <img src="images/javascript.png">
+                    <div class="each-column-text">
+                    <p>Javascript</p>
+                </div>
+                </div>
+                <div class="each-column">
+                    <img src="images/java.png" width="100px">
+                    <div class="each-column-text">
+                    <p>Java</p>
+                </div>
+                </div>
+        
+                
+                </div>
+            </section>
+            <section id="Experiences">
+            <div class="top-section">
+                <h1>EXPERIENCES</h1>
+            </div>
+            
+
+
+
+        <!-- ********************  EXPERIENCES  ********************* -->
+            <div class="content">
+              <!-- Job 1 -->
+              <section class="job-item">
+                <div class="job-details">
+                  <h3> Logistics Executive</h3>
+                  <p>ELLEHACKS</p>
+                  <p>August 2022-Present</p>
+                </div>
+                <div class="job-summary">
+                    <ul>
+                        <li>Part of the team to organize one of Canada's greatest female and non-binary hackathon called
+                            ELLEHACKS
+                            </li>
+                        <li>Negotiated with logistics team members to achieve cost-effective solutions in terms of
+                            location, food-budget and prize costs</li>
+                        <li>Set schedules and assigned work to effectively handle different demand levels.</li>
+                       </ul>
+                    </li>
+                 
+                </div>
+              </section>
+          </section>
+
+          <section id="Projects">
+            <div class="top-section">
+                <h1>Projects</h1>
+            </div>
+
+        <section id="Contact">
+            <!-- ********************  CONTRACT  ********************* -->
+<div class="top-section">
+    <h1>CONTACT ME</h1>
+    <p>manali.bisht17@gmail.com</p>
+    <a href="https://github.com/manalib03" target="_blank">
+        <img src="images/github.png" class="contact-image">
+    </a>
+    <a href="https://www.linkedin.com/in/manali-bisht-b85003240/" target="_blank">
+    <img src="images/linkedin.png" class="contact-image">
+</a>
+</div>
+
+</section>
+<script>
+    function dropMenu(){
+        var tab = document.getElementById("dropDownClick");
+        if(tab.className === "topnav"){
+            tab.className += " navMove";
+        }else{
+            tab.className = "topnav";
+        }
+    }
+
+    function changeProject(){
+    var element = document.getElementById( 'images' );
+    element.src = 'images/project1.PNG';
+}
+</script>
+</body>
+</html>
